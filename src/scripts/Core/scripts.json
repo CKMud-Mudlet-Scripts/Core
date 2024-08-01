@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Core_example_script",
+    "eventHandlerList": [
+      "sysInstall"
+    ]
+  }
+]
