@@ -2,67 +2,78 @@
        {
               "isActive": "yes",
               "isFolder": "no",
-              "name": "Fight Cmd 3.0",
+              "name": "speedwalk",
+              "regex": "^run (.+)",
               "script": ""
        },
        {
               "isActive": "yes",
               "isFolder": "no",
-              "name": "Combo Cmd",
+              "name": "fight",
+              "regex": "^fight ?(.+)?",
               "script": ""
        },
        {
               "isActive": "yes",
               "isFolder": "no",
-              "name": "ActionQueue",
+              "name": "autolearn",
+              "regex": "^autolearn ?(.+)?$",
               "script": ""
        },
        {
               "isActive": "yes",
               "isFolder": "no",
-              "name": "StateMachine",
+              "name": "blast",
+              "regex": "^blast ?(.+)?",
               "script": ""
        },
        {
               "isActive": "yes",
               "isFolder": "no",
-              "name": "LIBS",
+              "name": "combo",
+              "regex": "^combo ?(.+)?",
               "script": ""
        },
        {
               "isActive": "yes",
               "isFolder": "no",
-              "name": "Safe Send Queue",
+              "name": "lore",
+              "regex": "^lore (.+)",
               "script": ""
        },
        {
               "isActive": "yes",
               "isFolder": "no",
-              "name": "Auto Affect Stuff",
+              "name": "Set config",
+              "regex": "^set config ?(.+)?$",
               "script": ""
        },
        {
               "isActive": "yes",
               "isFolder": "no",
-              "name": "Training Stuff",
+              "name": "Multi-Send",
+              "regex": "^(.*;.*)$",
               "script": ""
        },
        {
               "isActive": "yes",
               "isFolder": "no",
-              "name": "Botmode",
+              "name": "configure",
+              "regex": "^configure ?(.+)?$",
               "script": ""
        },
        {
               "isActive": "yes",
               "isFolder": "no",
-              "name": "TELL RPC",
+              "name": "Show Gauntlet level",
+              "regex": "^what level$",
               "script": ""
        },
        {
               "isActive": "yes",
               "isFolder": "no",
-              "name": "Configure EMCO",
+              "name": "core update",
+              "regex": "^core update$",
               "script": ""
        }
 ]

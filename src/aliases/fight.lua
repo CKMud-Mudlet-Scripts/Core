@@ -1,0 +1,1 @@
+cmd_fight(matches[2] or nil)

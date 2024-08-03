@@ -1,0 +1,1 @@
+safeSend("focus 'hasshuken'")

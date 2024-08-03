@@ -1,7 +1,9 @@
 {
-  "package": "Core",
-  "version": "1.4.0",
-  "author": "fried",
-  "title": "Core by fried",
-  "outputFile": true
+       "package": "CKMud-Core",
+       "title": "CKMud Automation for Core and other Androids",
+       "version": "0.4.3",
+       "author": "fried",
+       "icon": "android.png",
+       "dependencies": "EMCOChat",
+       "outputFile": true
 }

@@ -1,0 +1,134 @@
+[
+       {
+              "name": "Combo or Enemy",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multielineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "\\[(Combo): ([^\\]]+)]",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "\\[(Enemy): ([^\\]]+)%?\\s*]",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "\\[(?:[^:]+): ([0-9]+)%]",
+                            "type": "substring"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "Are We Fighting",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multielineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "\\[Enemy: (?\u003cEnemy\u003e.+)] \\[([0-9,]+)]",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "\\*\\*\\*([0-9,]+)\\*\\*\\*",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "\\[Enemy: (\\d+)%?]",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "No way!  You're fighting for your life!",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "\\[(?:[^:]+): ([0-9]+)%]",
+                            "type": "regex"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "End of Fight by RIP",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multielineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": ".+ is dead!  R\\.I\\.P\\.",
+                            "type": "regex"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "Can Melee Fight",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multielineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "(.+) launches into the air at you!",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "\\*\\*\\*[0-9,]+\\*\\*\\*$",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "  \\[[0-9,]+](  [RAGE])?$",
+                            "type": "regex"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "Can't Melee Fight",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multielineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "Maybe you should land first!",
+                            "type": "exactMatch"
+                     }
+              ],
+              "script": ""
+       }
+]

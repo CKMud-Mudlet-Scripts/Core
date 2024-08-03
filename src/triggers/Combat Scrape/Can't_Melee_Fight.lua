@@ -1,0 +1,1 @@
+Toggles.meleefighting = false

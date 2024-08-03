@@ -1,0 +1,6 @@
+echo("YAY MOTD")
+send("gogogo\n")
+send("\n")
+send("look")
+send("status")
+send("score")

@@ -1,0 +1,1 @@
+cmd_blast(matches[2] or nil)

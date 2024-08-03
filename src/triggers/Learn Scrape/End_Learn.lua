@@ -1,0 +1,1 @@
+PromptFlags.learncard = nil

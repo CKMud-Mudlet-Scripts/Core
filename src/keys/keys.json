@@ -1,0 +1,26 @@
+[
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Fight Mode",
+              "command": "",
+              "script": "",
+              "keys": "F12"
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Training Mode",
+              "command": "",
+              "script": "",
+              "keys": "F9"
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Toggle no_fight",
+              "command": "",
+              "script": "",
+              "keys": "F10"
+       }
+]

@@ -1,39 +1,33 @@
-# Core
+# CKMud-Core
 
-## Core by fried
+## CKMud-Core by fried
 
-This is a template project created by muddler. It's meant to give you the basic skeleton to get started.
-It is not a complete project, nor does it provide an example of every type of trigger scenario or keybinding corner case. It would make it even more difficult to clear out to make way for your own items.
-It **will** properly muddle and create an mpackage, however.
-For more detailed information on describing your triggers, scripts, etc in the json files, please see the [muddler wiki](https://github.com/demonnic/muddler/wiki)
+This is a set of automations for android characters like Core
 
-This space is where I would normally put the description of my package and what it does/why I made it. But if you have a README format you already like, feel free to ignore all this.
+The script can automatate buffs, learning, fights. 
+
+`vent` automattically configures for max heat disipation and moves back to previous setting
+
+From Time to time the script will issue `score`, and use scouter on yourself to calibrate damage, abilitiy costs, and health %. 
 
 ## Installation
 
-It's a good idea to provide installation instructions. I like to include a command they can copy/paste into the Mudlet commandline. Like
+`installPackage("https://github.org/fried/CKMud-Core/releases/latest/download/CKMud-Core.mpackage")`
 
-`lua uninstallPackage("packageName") installPackage("https://somedomain.org/path/to/my/package/packageName.mpackage")`
+After installation `core update` alias will take care of updating the script. 
 
 ## Usage
 
-Brief introduction to the overall usage. Then break it down to specifics
+Type `learn` as soon as possible, this teaches the script what abilities you have.  Including automatic buffs. 
+
+### Keys
+
+F10 - Enable auto fight() (Will automaticlly use best abilities during a fight)
+F9 - Start Auto Learn / Training mode using a `child` targets:
 
 ### Aliases
 
-* `alias1 <param1>`
-  * description of what the alias does, and what param1 is if it exists
-    * example usage1
-    * optional example usage2, etc
-* `alias 2`
-  * and so on, and so forth
-
-### API
-
-* `functionName(param1, param2)
-  * Then, do the same thing for any Lua API which you want them to be able to use.
-  * This part can be skipped if you have separate API documentation, but keep in mind the README.md file is accessible from the package manage in Mudlet, so this allows you to provide documentation within Mudlet, to a degree.
-
-## Final thoughts, how to contribute, thanks, things like that
-
-I like to put anything which doesn't fit with the above stuff here, at the end. It keeps the documentation like stuff at the top.
+autolearn <target> - Start Auto Learn / Training mode using <target> as attack target. 
+configure - Capture android `configure` command so we can save your confiures through vent 
+fight <target> - Auto Combo / Melee combat picker 
+blast <target> - Auto Ki Attack Picker

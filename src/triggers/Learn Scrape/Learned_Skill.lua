@@ -1,0 +1,1 @@
+Player.Learned[translate_skill_name(matches[2])] = true

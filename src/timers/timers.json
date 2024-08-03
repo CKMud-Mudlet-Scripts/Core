@@ -1,0 +1,32 @@
+[
+       {
+              "isActive": "no",
+              "name": "BotMode",
+              "command": "",
+              "hours": "0",
+              "minutes": "0",
+              "seconds": "4",
+              "milliseconds": "0",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "name": "LastPrompt",
+              "command": "",
+              "hours": "0",
+              "minutes": "0",
+              "seconds": "4",
+              "milliseconds": "0",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "name": "Trainer",
+              "command": "",
+              "hours": "0",
+              "minutes": "0",
+              "seconds": "4",
+              "milliseconds": "0",
+              "script": ""
+       }
+]
