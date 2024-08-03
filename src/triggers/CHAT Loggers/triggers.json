@@ -167,6 +167,10 @@
                      {
                             "pattern": "^([a-z ]+) exclaims,",
                             "type": "regex"
+                     },
+                     {
+                            "pattern": "^([a-z ]+) gives you (.*)",
+                            "type": "regex"
                      }
               ],
               "script": ""

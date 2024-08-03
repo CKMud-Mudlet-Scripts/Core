@@ -1,7 +1,7 @@
 --[[
 This parses !cmd from tell messages and handles replies
 ]]
-local alt_list = {"Thorn,Nip,Core,Prime,Kemmler,Enoch"}
+local fried = require("CKMud-Core.fried")
 
 local rpc_methods =
   {
@@ -11,7 +11,7 @@ local rpc_methods =
       end,
     ["!disconnect"] =
       function(who, args)
-        local allow_list = string.split(FRIED_read_constant("alt_list"), ",")
+        local allow_list = string.split(fried:read_constant("alt_list"), ",")
         if table.contains(alt_list, who) then
           tell_reply(who, "Sure Thing Buddy!")
           send("quit")
@@ -22,7 +22,7 @@ local rpc_methods =
       end,
     ["!version"] =
       function(who, args)
-        tell_reply(who, string.format("__PKGNAME__ v%s by Fried", FRIED_get_version()))
+        tell_reply(who, "__PKGNAME__ v__VERSION__ by Fried")
       end,
     ["!maxpl"] =
       function(who, args)

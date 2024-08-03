@@ -1,10 +1,12 @@
+local fried = require("CKMud-Core.fried")
+
 registerAnonymousEventHandler(
   "sysLoadEvent",
-  FRIED_run_init(
+  fried:run_init(
     "StateMachine",
     function()
       State =
-        FRIED_make_enum(
+        fried:make_enum(
           "State",
           {
             'REST',

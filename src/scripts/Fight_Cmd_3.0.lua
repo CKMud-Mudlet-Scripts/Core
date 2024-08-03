@@ -3,6 +3,7 @@ This script breaks down all the attacks into a simulated average damage per roun
 working in each of the modifiers like bleed,daze,etc and uses that data + the cost
 to determine which attack to pick
 ]]
+local fried = require("CKMud-Core.fried")
 
 local function make_melee(cost, dmg, is_ubs, cooldown, count, extra)
   local extra_dict = {}
@@ -28,7 +29,7 @@ end
   and bleed for burn
 ]]
 local Extras =
-  FRIED_make_enum("Extras", {"knockdown", "bleed", "daze", "fast", "piercing", "fast30"})
+  fried:make_enum("Extras", {"knockdown", "bleed", "daze", "fast", "piercing", "fast30"})
 -- % damage  * (1+([UBS or LBS] / 100) / 4)
 local melee_attacks =
   {
