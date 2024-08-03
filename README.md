@@ -12,7 +12,7 @@ From Time to time the script will issue `score`, and use scouter on yourself to 
 
 ## Installation
 
-`installPackage("https://github.org/fried/CKMud-Core/releases/latest/download/CKMud-Core.mpackage")`
+`installPackage("https://github.com/fried/CKMud-Core/releases/latest/download/CKMud-Core.mpackage")`
 
 After installation `core update` alias will take care of updating the script. 
 
