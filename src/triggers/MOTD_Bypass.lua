@@ -1,6 +1,6 @@
 echo("YAY MOTD")
 send("gogogo\n")
 send("\n")
-send("look")
+send("learn")
 send("status")
 send("score")

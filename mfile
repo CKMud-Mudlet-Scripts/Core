@@ -1,9 +1,9 @@
 {
        "package": "CKMud-Core",
        "title": "CKMud Automation for Core and other Androids",
-       "version": "0.4.5",
+       "version": "0.4.6",
        "author": "fried",
        "icon": "android.png",
-       "dependencies": "EMCOChat",
+       "dependencies": "",
        "outputFile": true
 }
